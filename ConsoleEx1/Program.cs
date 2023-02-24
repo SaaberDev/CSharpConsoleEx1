@@ -10,6 +10,7 @@ namespace ConsoleEx1
             Console.Write(@"1. User Input Validation
 2. Display Maximum Value
 3. Image Display Recognition
+4. Determine Speed Limit
 ");
             Console.WriteLine("=============================");
             Console.WriteLine("Enter a number between 1 to 3");
@@ -33,9 +34,16 @@ namespace ConsoleEx1
                 case 3:
                     Console.WriteLine("=============================");
                     Console.WriteLine("Program 3: Image Display Recognition");
-                    // Program 1: Image Display Recognition
+                    // Program 3: Image Display Recognition
                     // ask the user to enter the width and height of an image and determine image orientation
                     (new ImageDisplayRecognition()).DisplayOrientation();
+                    break;
+                case 4:
+                    Console.WriteLine("=============================");
+                    Console.WriteLine("Program 4: Determine Speed Limit");
+                    // Program 4: Determine Speed Limit
+                    // ask the user to set a speed limit and speed of the car, based on that determine speed limit violation
+                    (new SpeedCamera()).DetermineSpeedLimitViolation();
                     break;
                 default:
                     Console.WriteLine("No programs to run!");
